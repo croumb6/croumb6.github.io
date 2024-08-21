@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .form-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            /* Set the gap between grid items */
+            /* 
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+    <title>Personal Information Form</title>  
+
+</head>
+
+<body>
+
+    <form class="form-grid">
+	        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+        </div>
+
+        <div>
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName" name="middleName">
+        </div>
+
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+
+        <div>
+            <label for="suffix">Suffix:</label>
+            <input type="text" id="suffix" name="suffix">
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>  
+
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="citizenship">Citizenship:</label>
+            <input type="text" id="citizenship" name="citizenship">
+        </div>
+
+        <div>
+            <label for="travelerNumber">Known Traveler Number:</label>
+            <input type="text" id="travelerNumber" name="travelerNumber">
+        </div>
+
+
+        <div>
+            <label for="flyerNumberCompany">Frequent Flyer Company:</label>
+            <input type="text" id="flyerCompany" name="flyerNumber">
+        </div>
+
+        <div>
+            <label for="flyerNumber">Frequent Flyer Number:</label>
+            <input type="text" id="flyerNumber" name="flyerNumber">
+        </div>
+
+        <div>
+            <label for="flightCompany">Flight Company:</label>
+            <input type="text" id="flightCompany" name="flightCompany">
+        </div>
+
+        <div>
+            <label for="flightConfirmation">Flight Confirmation Code:</label>
+            <input type="text" id="flightConfirmation" name="flightConfirmation">
+        </div>
+
+
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
